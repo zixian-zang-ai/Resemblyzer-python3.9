@@ -1,9 +1,9 @@
 librosa>=0.9.1
 numpy>=1.20.0
 webrtcvad-wheels>=2.0.14
+--index-url https://download.pytorch.org/whl/cpu
 torch>=1.0.1
 scipy>=1.2.1
-typing
 matplotlib>=3.0.0
 sounddevice
 tqdm
