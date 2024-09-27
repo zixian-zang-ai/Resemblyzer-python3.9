@@ -2,15 +2,13 @@ from resemblyzer.hparams import *
 from resemblyzer import audio
 from pathlib import Path
 from typing import Union, List
+import importlib
+import sys
+importlib.reload(sys)
+
 from torch import nn
 from time import perf_counter as timer
 import numpy as np
-import importlib
-import sys
-
-importlib.reload(sys)
-
-import torch
 
 
 class VoiceEncoder(nn.Module):
