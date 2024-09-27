@@ -5,6 +5,11 @@ from typing import Union, List
 from torch import nn
 from time import perf_counter as timer
 import numpy as np
+import importlib
+import sys
+
+importlib.reload(sys)
+
 import torch
 
 
