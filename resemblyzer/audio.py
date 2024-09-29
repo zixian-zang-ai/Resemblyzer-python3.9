@@ -89,6 +89,7 @@ def trim_long_silences(wav):
     
     audio_mask = moving_average(voice_flags, vad_moving_average_width)
     audio_mask = np.round(audio_mask).astype(bool)
+    print("kept radio", np.sum(audio_mask)/audio_mask.size)
     
     # Dilate the voiced regions
     audio_mask = binary_dilation(audio_mask, np.ones(vad_max_silence_length + 1))
